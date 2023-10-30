@@ -1,0 +1,34 @@
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px 4px;
+  margin: 24px 0;
+  max-width: 100%;
+}
+
+.options-grid img {
+  width: 66px;
+  height: 48px;
+}
+
+.options-grid img:hover {
+  transform: scale(1.1);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+/* styling for large screens. */
+@media screen and (min-width: 768px) {
+  .options-grid img {
+    width: 88px;
+    height: 64px;
+  }
+
+  .options-grid {
+    gap: 12px 8px;
+  }
+}

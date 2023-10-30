@@ -1,0 +1,151 @@
+/* Colors: - https://coolors.co/palette/11151c-212d40-364156-7d4e57-d66853 */
+
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+html {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #11131c;
+  background-image: url("/src/assets/herringbone.png");
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Crimson Text", serif;
+  margin: 0;
+}
+
+.items h3 {
+  font-size: 16px;
+}
+
+body {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 48px;
+
+  max-width: 800px;
+  box-shadow: #0f1217 0px 0px 100px;
+  background-color: #11151c;
+  background-image: url("/src/assets/concrete.webp"),
+    url("/src/assets/concrete.webp");
+  background-blend-mode: overlay;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+}
+
+hr {
+  width: 470px;
+  max-width: 85%;
+  color: #212d40;
+  margin: 4px 0;
+}
+
+input {
+  font-family: "Lato", sans-serif;
+}
+
+.buttons input[type="button"] {
+  font-size: 16px;
+  padding: 8px 24px;
+  background-color: #11151c;
+  color: white;
+  border: none;
+  border-radius: 5vmin;
+}
+
+.buttons input[type="button"]:hover {
+  background-color: #d66853;
+  color: #11151c;
+}
+
+#submit.disabled {
+  background-color: gray;
+  color: #11151c;
+}
+
+#submit {
+  margin: 8px;
+}
+
+#item-name {
+  font-size: 32px;
+  margin: 0.6em;
+  font-family: "Young Serif", serif;
+  text-align: center;
+  line-height: 110%;
+  letter-spacing: 1px;
+}
+
+img {
+  box-shadow: #11151c 1px 1px 3px;
+}
+
+.feedback {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #11151c;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct {
+  color: #49d049;
+}
+
+.wrong {
+  color: red;
+}
+
+.page-title {
+  position: fixed;
+  top: 50px;
+}
+
+.score {
+  background-color: #11151c;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .score {
+    padding: 16px 24px;
+  }
+}
+
+.score p {
+  margin: 0.5em;
+  color: #e2826f;
+}
+
+.score span {
+  display: inline-block;
+  width: 6ch;
+  color: white;
+}
